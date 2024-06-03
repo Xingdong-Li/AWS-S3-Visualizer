@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger deployment on push to main branch. Adjust if you use a different branch.
+      - main # Trigger deployment on push to main branch. Adjust if you use a different branch.
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  
+          node-version: "20"
       - name: Install Dependencies
         run: npm install
 
@@ -31,8 +31,8 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: gh-pages  # The branch the action should deploy to.
-          folder: dist  # The folder the action should deploy.
-          token: ${{ secrets.GITHUB_TOKEN }}  # The GitHub token to use for deployment. This should be the default
-          clean: true  # Automatically remove deleted files from the deployment branch
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
+          token: ${{ secrets.GITHUB_TOKEN }} # The GitHub token to use for deployment. This should be the default
+          clean: true # Automatically remove deleted files from the deployment branch
 
