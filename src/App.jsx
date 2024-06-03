@@ -16,7 +16,7 @@ export default function App() {
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
           <Routes>
-            <Route index element={<Explorer userId="666666" userName="Sheldon"/>} />
+            <Route index element={<Explorer userId="Sheldon" userName="docs"/>} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </BrowserRouter>
