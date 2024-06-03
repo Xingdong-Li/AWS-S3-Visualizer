@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { ChakraProvider } from "@chakra-ui/react";
 import Explorer from "./components/Explorer";
+import React from "react";
 
 const queryClient = new QueryClient({
   defaultOptions: {
