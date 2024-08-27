@@ -17,3 +17,8 @@ AWS-S3-Visualizer is a web application designed to provide a user-friendly inter
 - Chakra UI
 - @tanstack/react-query
 - Various custom hooks for interacting with AWS S3
+
+## Instructions
+- run `npm install`
+- in file `.env`, replace `VITE_AWS_ACCESS_KEY_ID`, `VITE_AWS_SECRET_ACCESS_KEY` and `VITE_BUCKET_NAME` with yours
+- run `npm start`
